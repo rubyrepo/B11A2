@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.quicksand-Quicksand {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 130px;
+}
+nav div{
+    display: flex;
+    align-items: center;
+}
+nav img {
+    height: 62px;
+    width: 62px;
+}
+nav h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px 35px;
+}
+#burger-menu{
+    display: none;
+}
+nav button{
+    height: 50px;
+    width: 180px;
+    font-size: 1.25rem;
+    color: white;
+    background-color: rgba(254, 163, 1, 1);
+    border: none;
+    border-radius: 12px;
+}
+header hr{
+    display: none;
+}
+#banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 130px;
+}
+#banner-div1 h1{
+    font-size: 3.5rem;
+}
+#banner-div1 p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: black;
+}
+#banner-div1 button{
+    height: 50px;
+    width: 200px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 12px;
+}
+button, a {
+    cursor: pointer;
+}
+
+#curriculum{
+    background-image: url(../assets/bg.png);
+    margin: 20px 130px;
+}
+#curriculum h2{
+    text-align: center;
+    font-size: 2.875rem;
+}
+#curriculum-parent{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 105px;
+    margin: 67px 0PX;
+    padding: 40px 0px;
+    
+}
+
+
+#curriculum-child-01{
+    background: linear-gradient(180deg, rgba(222,245,255,1) 0%, rgba(255,255,255,1) 40%);
+    border: 1px solid rgba(222, 245, 255, 1);
+    text-align: center ;
+    font-family: "Raleway", serif;
+    border-radius: 18.86px;
+}
+#curriculum-child-02{
+    background: linear-gradient(180deg, rgba(255,244,220,1) 0%, rgba(255,255,255,1) 40%);
+    border: 1px solid rgba(255, 244, 220, 1);
+    text-align: center ;
+    font-family: "Raleway", serif;
+    border-radius: 18.86px;
+}
+#curriculum-child-03{
+    background: linear-gradient(180deg, rgba(238,225,255,1) 0%, rgba(255,255,255,1) 40%);
+    border: 1px solid rgba(242, 232, 255, 1);
+    text-align: center ;
+    font-family: "Raleway", serif;
+    border-radius: 18.86px;
+}
+#curriculum-parent button{
+    background: none;
+    border: none;
+    font-size: 0.943rem;
+    margin-bottom: 40px;
+}
+#curriculum p{
+    font-size: 0.943rem;
+    color: rgba(128, 128, 128, 1);
+    margin: 20px 25px;
+}
+#curriculum-parent img{
+    margin-top: 60px;
+}
+#curriculum-parent h3{
+    margin-top: 30px;
+}
+#back_forward_parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#back_forward_parent button{
+    border: none;
+    background-color: white;
+}
+#back--v1{
+    background-color: rgba(254, 163, 1, 1);
+    border-radius: 50%;
+}
+#forward--v1{
+    background-color: rgba(254, 163, 1, 1);
+    border-radius: 50%;
+}
+#back--v1:hover, #forward--v1:hover{
+    background-color: rgba(254, 161, 1, 0.74);
+}
+@media (max-width: 768px) {
+    nav div h1, nav ul, nav button{
+        display: none;
+    }    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 20px;
+    }
+    nav div img{
+        height: 46px;
+        width: 46px;
+    }
+    #burger-menu{
+        display: inline;
+        width: 30px;
+        height: 30px;
+    }
+    header{
+        border-bottom: 1px solid rgba(254, 163, 1, 1);
+    }
+    #banner{
+        flex-direction: column-reverse;
+    }
+    #banner-div1{
+        text-align: center;
+    }
+    #banner-div1 h1{
+        font-size: 2rem;
+        margin: 10px -56px;
+    }
+    #banner-div1 p{
+        font-size: 0.875rem;
+        font-weight: 400;
+        margin: 20px -30px
+    }
+    #banner-div2 img{
+        height: 413px;
+        width: 336.58px;
+    }
+    #curriculum-parent{
+        flex-direction: column;
+    }
+    #banner button{
+        margin-bottom: 50px;
+    }
+
+    #curriculum h2{
+        font-size: 1.625rem;
+        margin: -30px -25px;
+        margin-top: 5px;
+        padding: 0px 0px;
+        font-weight: 700;
+    }
+    #curriculum-child-01, #curriculum-child-02, #curriculum-child-03{
+        margin: -40px -120px;
+    }
+    #back_forward_parent{
+        display: none;
+    }
+
+}
