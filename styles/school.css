@@ -301,8 +301,10 @@ footer {
     max-width: 400px;
     margin: 0 10px;
     box-sizing: border-box;
-    margin-left: 210px;
 }
+
+
+
 
 #footer-div-01-01 {
     display: flex;
