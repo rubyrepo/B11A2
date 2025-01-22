@@ -148,13 +148,16 @@ button, a {
 #back--v1{
     background-color: rgba(254, 163, 1, 1);
     border-radius: 50%;
+    transition: transform 0.5s ease, background-color 0.5s ease;
 }
 #forward--v1{
     background-color: rgba(254, 163, 1, 1);
     border-radius: 50%;
+    transition: transform 0.5s ease, background-color 0.5s ease;
 }
 #back--v1:hover, #forward--v1:hover{
     background-color: rgba(254, 161, 1, 0.74);
+    transform: scale(1.05);
 }
 #marquee{
     margin: 100px 0px;
@@ -241,11 +244,49 @@ button, a {
     ;
     justify-content: center;
     gap: 9px;
+    margin: 80px auto;
 }
 #stories-gallery img{
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
 }
+#btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn-container button{
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+    height: 40px;
+    width: 180px;
+    text-align: center;
+}
+#stories-gallery h4, #stories-gallery h3, #stories-gallery p{
+    margin: auto 20px;
+    margin-bottom: 10px;
+}
+#stories-gallery h4{
+    padding-left: 10px;
+    padding-top: 10px;
+    height: 25px;
+    width: 150px;
+    color: white;
+    border-radius: 50px;
+    font-size: 0.959rem;
+    position: relative;
+    bottom: 25px;
+} 
+#stories-gallery h3{
+    font-size: 0.800;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
 @media (max-width: 768px) {
     nav div h1, nav ul, nav button{
         display: none;
@@ -306,5 +347,24 @@ button, a {
     #back_forward_parent{
         display: none;
     }
-
+    #story-1{
+        display: none;
+    }
+    #story-2, #story-3,#story-4, #story-5{
+        width: 173.27px;
+    }
+    #stories-gallery img{
+        width: 173.27px;
+    }
+    #stories-gallery h4{
+        height: 22px;
+        width: 100px;
+        font-size: 0.571rem;
+        margin-bottom: 0px;
+    }
+    #stories-gallery h3{
+        font-size: 0.700rem;
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
 }
