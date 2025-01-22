@@ -156,6 +156,9 @@ button, a {
 #back--v1:hover, #forward--v1:hover{
     background-color: rgba(254, 161, 1, 0.74);
 }
+#marquee{
+    margin: 100px 0px;
+}
 #admission {
     display: flex;
     overflow: hidden;
@@ -184,8 +187,65 @@ button, a {
         transform: translateX(-100%); /* Move completely out of view */
     }
 }
-
-
+#stories{
+    background: 
+    linear-gradient(0deg, rgba(254, 161, 1, 0.397) 0%, rgba(255, 255, 255, 0) 100%), 
+    url(../assets/bg.png);
+}
+#stories h2{
+    text-align: center;
+    font-size: 2.875rem;
+    margin-top: 60px;
+    font-weight: 700;
+}
+#story-1{
+    grid-area: story-1;
+    background-color: white;
+    border: none;
+    border-radius: 16px;
+    width: 540px;
+}
+#story-2{
+    grid-area: story-2;
+    background-color: white;
+    border: none;
+    border-radius: 16px;
+    width: 291px;
+}
+#story-3{
+    grid-area: story-3;
+    background-color: white;
+    border: none;
+    border-radius: 16px;
+    width: 291px;
+}
+#story-4{
+    grid-area: story-4;
+    background-color: white;
+    border: none;
+    border-radius: 16px;
+    width: 291px;
+}
+#story-5{
+    grid-area: story-5;
+    background-color: white;
+    border: none;
+    border-radius: 16px;
+    width: 291px;
+}
+#stories-gallery{
+    display: grid;
+    grid-template-areas: 
+    " story-1 story-2 story-3"
+    " story-1 story-4 story-5"
+    ;
+    justify-content: center;
+    gap: 9px;
+}
+#stories-gallery img{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
 @media (max-width: 768px) {
     nav div h1, nav ul, nav button{
         display: none;
